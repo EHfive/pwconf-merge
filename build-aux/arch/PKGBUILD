@@ -1,0 +1,41 @@
+# Maintainer: Huang-Huang Bao <eh5@eh5.me>
+
+_commit=2cafa8de47fe6f4356b77b83e131fbb3a92683ed
+
+_pkgname=pwconf-merge
+_pkgver=0.1.0-pre1
+
+pkgbase=${_pkgname}
+pkgname=(${_pkgname} ${_pkgname}-hook)
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="A tool to merge PipeWire configuration"
+url="https://github.com/EHfive/pwconf-merge"
+license=(MIT)
+arch=(any)
+makedepends=(npm)
+source=("https://registry.npmjs.org/$_pkgname/-/${_pkgname}-${_pkgver}.tgz"
+        pwconf-merge.hook)
+noextract=("${_pkgname}-${_pkgver}.tgz")
+sha256sums=('fd891ba58f85e03f39f10b38ba34e5f97d1bca446d5452b5e905eefd00a58173'
+            '0518ae06f9df70e925130abb64d0b22eafe599ae5eae0fea3015f725720e89e2')
+
+
+package_pwconf-merge() {
+  depends=(nodejs)
+  optdepends=('pwconf-merge-hook: ALPM hook')
+  npm install -g  \
+    --prefix "${pkgdir}/usr" \
+    --cache "${srcdir}/npm-cache" \
+    "${_pkgname}-${_pkgver}.tgz"
+
+  install -Dt "${pkgdir}/usr/share/licenses/${_pkgname}" \
+    -m644 "${pkgdir}/usr/lib/node_modules/${_pkgname}/LICENSE"
+
+  chown -R root:root "${pkgdir}"
+}
+
+package_pwconf-merge-hook() {
+  pkgdesc+=" - ALPM hook"
+  install -Dt "${pkgdir}/usr/share/libalpm/hooks" -m644 pwconf-merge.hook
+}

@@ -1,0 +1,16 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Path
+Target = /usr/share/pipewire/**/*.conf
+
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = pwconf-merge
+
+[Action]
+Description = Merging PipeWire configuration (pwconf-merge)...
+When = PostTransaction
+Exec = /usr/bin/pwconf-merge
