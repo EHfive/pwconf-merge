@@ -21,7 +21,7 @@
   "dependencies": {
     "commander": "^8.1.0",
     "lodash-es": "^4.17.21",
-    "spa-json": "0.0.0-pre1",
+    "spa-json": "^0.1.0-pre2",
     "vm2": "^3.9.3"
   },
   "devDependencies": {
