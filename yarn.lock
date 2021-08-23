@@ -109,10 +109,10 @@ path-is-absolute@^1.0.0:
   resolved "https://registry.yarnpkg.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
 
-spa-json@^0.1.0-pre2:
-  version "0.1.0-pre2"
-  resolved "https://registry.yarnpkg.com/spa-json/-/spa-json-0.1.0-pre2.tgz#307e39ff8e25cf71d96de69b8aca3b4ee5d1b9a4"
-  integrity sha512-3v8Zd2xreX337BRnGgssyC9MvqnbZC9SyHZbaGwHAD8Ot4mkNWt317iLK8adP7hvJnzDB9s6CXYPcYhfOrLD0g==
+spa-json@^0.1.0-pre3:
+  version "0.1.0-pre3"
+  resolved "https://registry.yarnpkg.com/spa-json/-/spa-json-0.1.0-pre3.tgz#afcf568973f4413d40ced247cf74b732127b4f25"
+  integrity sha512-LLfA8CtzN7Xw+8Qp3NJEU2nUnGz+7/ZHv5b7bUQpJyXKg2nte1d9v1g047d4KJo1dK3R4yplQWvPXvlhOEt0EA==
 
 vm2@^3.9.3:
   version "3.9.3"
