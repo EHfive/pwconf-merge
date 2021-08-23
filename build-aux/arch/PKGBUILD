@@ -3,7 +3,7 @@
 _commit=2cafa8de47fe6f4356b77b83e131fbb3a92683ed
 
 _pkgname=pwconf-merge
-_pkgver=0.1.0-pre1
+_pkgver=0.1.0-pre2
 
 pkgbase=${_pkgname}
 pkgname=(${_pkgname} ${_pkgname}-hook)
@@ -17,8 +17,8 @@ makedepends=(npm)
 source=("https://registry.npmjs.org/$_pkgname/-/${_pkgname}-${_pkgver}.tgz"
         pwconf-merge.hook)
 noextract=("${_pkgname}-${_pkgver}.tgz")
-sha256sums=('fd891ba58f85e03f39f10b38ba34e5f97d1bca446d5452b5e905eefd00a58173'
-            '0518ae06f9df70e925130abb64d0b22eafe599ae5eae0fea3015f725720e89e2')
+sha256sums=('e166fd07dcbfa3ea3b3fc9a7c3fed7f5d9dacc315e825f00f4572bee375dc14f'
+            '0435bf84db9dc559a3414f156db8c565b13bebf4132f5f4a165115f378705303')
 
 
 package_pwconf-merge() {

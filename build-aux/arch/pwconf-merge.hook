@@ -11,6 +11,6 @@ Type = Package
 Target = pwconf-merge
 
 [Action]
-Description = Merging PipeWire configuration (pwconf-merge)...
+Description = Merging PipeWire configuration slices (pwconf-merge)...
 When = PostTransaction
 Exec = /usr/bin/pwconf-merge
