@@ -2,7 +2,7 @@
 Operation = Install
 Operation = Upgrade
 Type = Path
-Target = /usr/share/pipewire/**/*.conf
+Target = usr/share/pipewire/**/*.conf
 
 [Trigger]
 Operation = Install
