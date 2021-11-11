@@ -21,8 +21,8 @@
   "dependencies": {
     "commander": "^8.1.0",
     "lodash-es": "^4.17.21",
-    "spa-json": "^0.1.0-pre3",
-    "vm2": "^3.9.3"
+    "spa-json": "^0.1.0-pre4",
+    "vm2": "^3.9.5"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.4",
